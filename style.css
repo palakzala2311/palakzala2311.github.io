@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+header {
+  padding: 20px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 150px;
+}
+
+a {
+  display: block;
+  margin: 10px;
+  color: cyan;
+  text-decoration: none;
+}
