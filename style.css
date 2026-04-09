@@ -10,8 +10,9 @@ header {
 }
 
 .profile {
-  border-radius: 50%;
   width: 150px;
+  border-radius: 50%;
+  margin: 20px;
 }
 
 a {
@@ -19,4 +20,8 @@ a {
   margin: 10px;
   color: cyan;
   text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
 }
