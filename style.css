@@ -17,16 +17,6 @@ header {
     background: linear-gradient(135deg, #1f1f1f, #000);
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background: #ff004f;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-}
-
 /* SECTIONS */
 section {
     padding: 40px;
@@ -60,7 +50,6 @@ h2 {
     margin: 15px;
     border-radius: 15px;
     position: relative;
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -68,24 +57,11 @@ h2 {
     align-items: center;
 }
 
-/* TEXT visible */
-.card h3 {
-    margin-bottom: 5px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #aaa;
-}
-
-/* OVERLAY FIX */
+/* OVERLAY */
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-
     background: rgba(0,0,0,0.7);
 
     display: flex;
@@ -96,18 +72,45 @@ h2 {
     transition: 0.3s;
 }
 
-/* SHOW ONLY ON HOVER */
 .card:hover .overlay {
     opacity: 1;
 }
 
-/* BUTTON */
 .overlay a {
-    color: white;
-    text-decoration: none;
     background: #ff004f;
+    color: white;
     padding: 8px 15px;
     border-radius: 20px;
+    text-decoration: none;
+}
+
+/* CONTACT */
+.contact p {
+    margin: 5px;
+}
+
+/* 🔥 RESUME SECTION STYLE */
+.resume {
+    background: #1a1a1a;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff004f, #ff3366);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff004f;
 }
 
 /* FOOTER */
