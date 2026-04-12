@@ -23,17 +23,21 @@ body {
     text-shadow: 0 0 10px #00ffd5;
 }
 
+/* ✨ EMOJI STYLE */
+.emoji {
+    font-size: 28px;
+    margin-left: 8px;
+}
+
 /* CARD */
 .card {
     width: 100%;
     max-width: 600px;
     margin: auto;
     padding: 20px;
-
     background: rgba(255,255,255,0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-
     box-shadow: 0 0 20px rgba(0,255,213,0.3);
 }
 
@@ -41,13 +45,6 @@ body {
 h2 {
     margin: 20px 0 10px;
     color: #00ffd5;
-    font-size: 22px;
-}
-
-/* ABOUT */
-.card p {
-    font-size: 15px;
-    color: #ccc;
 }
 
 /* SKILLS */
@@ -62,7 +59,6 @@ h2 {
     padding: 8px 12px;
     margin: 5px;
     border-radius: 20px;
-    font-size: 14px;
 }
 
 /* PROJECTS */
@@ -76,7 +72,6 @@ h2 {
     border-radius: 10px;
     text-decoration: none;
     color: white;
-    font-size: 14px;
 }
 
 .projects a:hover {
@@ -87,11 +82,10 @@ h2 {
 /* BUTTONS */
 .btn {
     display: inline-block;
-    margin: 10px 5px;
+    margin: 10px;
     padding: 10px 18px;
     border-radius: 25px;
     text-decoration: none;
-    font-size: 14px;
 }
 
 .blue {
@@ -108,17 +102,13 @@ h2 {
     transform: scale(1.05);
 }
 
-/* 📱 MOBILE EXTRA */
+/* MOBILE */
 @media (max-width: 500px) {
     .hero h1 {
         font-size: 30px;
     }
 
-    h2 {
-        font-size: 18px;
-    }
-
-    .card {
-        padding: 15px;
+    .emoji {
+        font-size: 22px;
     }
 }
