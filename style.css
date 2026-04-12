@@ -1,39 +1,59 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
   background: linear-gradient(135deg, #020617, #0f172a);
   color: #e2e8f0;
-  margin: 0;
 }
 
-/* Header */
-header {
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 60px 20px;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: white;
 }
 
-header h1 {
-  font-size: 38px;
-  color: #38bdf8;
+.hero h1 {
+  font-size: 45px;
 }
 
-header p {
-  color: #94a3b8;
+.hero h2 {
+  font-weight: normal;
 }
 
-/* Sections */
-section {
+.hero p {
+  margin: 10px 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Cards */
+.card {
   width: 85%;
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.05);
   border-radius: 15px;
-}
-
-/* Headings */
-h2 {
-  color: #22c55e;
-  margin-bottom: 10px;
+  backdrop-filter: blur(10px);
 }
 
 /* Skills */
@@ -44,18 +64,17 @@ h2 {
 }
 
 .skill {
-  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+  background: #1e293b;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   display: flex;
-  align-items: center;
   gap: 10px;
-  color: white;
+  align-items: center;
   transition: 0.3s;
 }
 
 .skill:hover {
-  transform: scale(1.1);
+  transform: translateY(-5px);
 }
 
 /* Projects */
@@ -78,24 +97,4 @@ h2 {
 .project a {
   color: #38bdf8;
   text-decoration: none;
-}
-
-/* Footer Resume Button */
-footer {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.resume-btn {
-  padding: 12px 25px;
-  background: linear-gradient(45deg, #22c55e, #4ade80);
-  color: black;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.resume-btn:hover {
-  transform: scale(1.1);
 }
