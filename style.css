@@ -19,14 +19,21 @@ body {
 
 .hero h1 {
     font-size: 40px;
-    color: #00ffd5;
-    text-shadow: 0 0 10px #00ffd5;
+    background: linear-gradient(45deg, #ff004f, #ff3366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* ✨ EMOJI STYLE */
+/* subtitle */
+.subtitle {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* emoji */
 .emoji {
     font-size: 28px;
-    margin-left: 8px;
 }
 
 /* CARD */
@@ -38,13 +45,13 @@ body {
     background: rgba(255,255,255,0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(0,255,213,0.3);
+    box-shadow: 0 0 20px rgba(255,0,79,0.3);
 }
 
 /* HEADINGS */
 h2 {
     margin: 20px 0 10px;
-    color: #00ffd5;
+    color: #ff004f;
 }
 
 /* SKILLS */
@@ -75,8 +82,7 @@ h2 {
 }
 
 .projects a:hover {
-    background: #00ffd5;
-    color: black;
+    background: #ff004f;
 }
 
 /* BUTTONS */
