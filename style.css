@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  background: linear-gradient(135deg, #020617, #0f172a);
   color: #e2e8f0;
   margin: 0;
 }
@@ -8,20 +8,33 @@ body {
 /* Header */
 header {
   text-align: center;
-  padding: 40px 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 50px 20px;
 }
 
 header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;
   color: #38bdf8;
 }
 
 header p {
   color: #94a3b8;
+}
+
+/* Resume Button */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #22c55e, #4ade80);
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* Sections */
@@ -30,44 +43,40 @@ section {
   padding: 20px;
   width: 85%;
   max-width: 800px;
-  background: rgba(255,255,255,0.04);
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-/* Headings */
-h2 {
-  color: #22c55e;
-  margin-bottom: 15px;
 }
 
 /* Skills */
 .skills {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skills li {
-  display: inline-block;
-  padding: 8px 15px;
-  margin: 6px;
-  border-radius: 20px;
-  background: linear-gradient(45deg, #06b6d4, #3b82f6);
-  color: white;
-  font-size: 14px;
+.skill {
+  background: #1e293b;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   transition: 0.3s;
 }
 
-.skills li:hover {
-  transform: scale(1.1);
+.skill i {
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
 }
 
 /* Projects */
 .project {
+  background: #1e293b;
   padding: 15px;
   margin-top: 15px;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border-radius: 10px;
   transition: 0.3s;
 }
 
