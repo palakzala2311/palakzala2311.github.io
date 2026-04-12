@@ -24,16 +24,15 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* subtitle */
 .subtitle {
     margin-top: 10px;
     color: #aaa;
     font-size: 16px;
 }
 
-/* emoji */
+/* EMOJI */
 .emoji {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 /* CARD */
@@ -52,6 +51,11 @@ body {
 h2 {
     margin: 20px 0 10px;
     color: #ff004f;
+}
+
+/* TEXT */
+.card p {
+    color: #ccc;
 }
 
 /* SKILLS */
@@ -92,6 +96,7 @@ h2 {
     padding: 10px 18px;
     border-radius: 25px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .blue {
@@ -115,6 +120,6 @@ h2 {
     }
 
     .emoji {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
