@@ -8,11 +8,11 @@ body {
 /* Header */
 header {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 38px;
   color: #38bdf8;
 }
 
@@ -20,29 +20,20 @@ header p {
   color: #94a3b8;
 }
 
-/* Resume Button */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: linear-gradient(45deg, #22c55e, #4ade80);
-  color: black;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
 /* Sections */
 section {
-  margin: 30px auto;
-  padding: 20px;
   width: 85%;
   max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 15px;
+}
+
+/* Headings */
+h2 {
+  color: #22c55e;
+  margin-bottom: 10px;
 }
 
 /* Skills */
@@ -53,22 +44,18 @@ section {
 }
 
 .skill {
-  background: #1e293b;
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   gap: 10px;
+  color: white;
   transition: 0.3s;
 }
 
-.skill i {
-  font-size: 18px;
-  color: #38bdf8;
-}
-
 .skill:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 /* Projects */
@@ -93,7 +80,22 @@ section {
   text-decoration: none;
 }
 
-/* Contact */
-section p {
-  margin: 5px 0;
+/* Footer Resume Button */
+footer {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.resume-btn {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #22c55e, #4ade80);
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  transform: scale(1.1);
 }
